@@ -8,7 +8,13 @@ A BetterDiscord plugin that turns profanity into classic cartoon grawlix! Determ
 ✅ Preserves punctuation and spacing (only transforms matched segments)
 
 ---
+## Policy / Terms Notice
 
+This plugin is intended for personal, client-side text filtering (e.g., making messages more PG or stylistic).
+Do not use it to evade moderation, harass others, or otherwise violate Discord’s Terms of Service or Community Guidelines.
+You are responsible for what you send.
+
+---
 ## What it does
 
 If you type a banned word, it will be replaced character-by-character with a predictable symbol mapping.
