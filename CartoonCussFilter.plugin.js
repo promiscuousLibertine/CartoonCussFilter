@@ -2,7 +2,7 @@
  * @name CartoonCussFilter
  * @author promiscuousLibertine
  * @description Profanity -> deterministic cartoon grawlix which is intended for entertainment purposes. Filters on-send AND on message edit.
- * @version 0.1.0
+ * @version 0.1.1
  */
 
 /*
@@ -33,14 +33,16 @@ module.exports = class CartoonCussFilter {
       matchMode: "smart",
 
       // Allowlist (one per line): exact words that should never be censored (case-insensitive)
-      allowWords: "assassin\nclassic",
+      allowWords: "assassin\nassassins\nassassinate\nassassinated\nassassination\nclassic\nclassics\nclassical\nclassy\nclassification\nclassifications\nclassified\nclassify\nassign\nassigned\nassigning\nassignment\nassignments\nassessment\nassessments\nassess\nassessed\nassessing\nassemble\nassembled\nassembling\nassembly\nassist\nassisted\nassisting\nassistant\nassistants\nassistance\npassion\npassionate\ncompassion\ncompassionate",
+
 
       // Banned list (one per line).
       // Suffix syntax (only used in matchMode=smart):
       // - word     : whole-word only
       // - word*    : partial anywhere
       // - word^    : prefix-only (start of a word)
-      bannedWords: "fuck^\nshit*\nbitch*\nass\nasshole*\nbastard*\ndamn\nhell",
+      bannedWords: "fuck^\nshit*\ntit\ntits\nbitch*\nass\nasshole*\nbastard*\ndamn\ngoddamn*\nhell\ncrap^\npiss^\ndick*\ncock*\ncunt\ntwat^\nwank^\njerk\nprick^\nslut*\nwhore*\nho\nmotherfucker*\nmf*\nfag\nfaggot*\ndyke\ntranny*\nshemale*\nretard*\nspaz*\ncripple*\nmongoloid*\nnigger*\nnigga*\nchink*\ngook\nkike\nwetback*\nbeaner*\nspic\nraghead*\nsandnigger*\ncoon",
+
 
       // Deterministic character map (one per line: a=@)
       // Your requested defaults:
@@ -178,7 +180,7 @@ module.exports = class CartoonCussFilter {
       React.createElement(
         "div",
         { style: noteStyle },
-        "Filters when you send OR edit a message. Hybrid matching: global mode + per-word overrides + allowlist. Allowlist always wins."
+        "Filters when you send OR edit a message. Hybrid matching: global mode + per-word overrides + allowlist. Allowlist always wins.\nPolicy notice: This plugin is for personal filtering/styling only. Do not use it to evade moderation or violate Discord's' rules. You are responsible for what you send."
       ),
 
       React.createElement(SelectRow, {
